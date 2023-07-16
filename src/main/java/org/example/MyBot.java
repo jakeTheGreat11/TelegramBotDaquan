@@ -452,7 +452,7 @@ public class MyBot extends TelegramLongPollingBot {
         int max = 0;
         String mostActive = "";
         for (String username : MostActiveUserMap.keySet()) {
-            if (MostActiveUserMap.get(username) > max) {
+            if (MostActiveUserMap.get(username) >= max) {
                 max = MostActiveUserMap.get(username);
                 mostActive = username;
             }
